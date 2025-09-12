@@ -96,14 +96,17 @@ android {
     productFlavors {
         lite {
             buildConfigField "boolean", "enableUpdate", "true"
+            buildConfigField "boolean", "allowGallery3d", "false"
             buildConfigField "String", "defaultAppUrl", "\"https://kino.oneevil.tr\""
         }
         zidoo {
             buildConfigField "boolean", "enableUpdate", "true"
+            buildConfigField "boolean", "allowGallery3d", "true"
             buildConfigField "String", "defaultAppUrl", "\"https://kino.oneevil.tr\""
         }
         full {
             buildConfigField "boolean", "enableUpdate", "true"
+            buildConfigField "boolean", "allowGallery3d", "false"
             buildConfigField "String", "defaultAppUrl", "\"\""
         }
     }

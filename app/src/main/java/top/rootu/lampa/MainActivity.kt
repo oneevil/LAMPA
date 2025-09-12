@@ -208,7 +208,7 @@ class MainActivity : BaseActivity(),
             "androidx.media3.demo.main", // v3, current
         )
         private val PLAYERS_BLACKLIST = setOfNotNull(
-            "com.android.gallery3d".takeIf { BuildConfig.FLAVOR != "zidoo" },
+            "com.android.gallery3d".takeIf { !BuildConfig.allowGallery3d },
             "com.android.tv.frameworkpackagestubs",
             "com.estrongs.android.pop",
             "com.estrongs.android.pop.pro",

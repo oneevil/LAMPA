@@ -95,12 +95,12 @@ android {
 
     productFlavors {
         lite {
-            buildConfigField "boolean", "enableUpdate", "false"
+            buildConfigField "boolean", "enableUpdate", "true"
             buildConfigField "String", "defaultAppUrl", "\"https://kino.oneevil.tr\""
         }
         full {
             buildConfigField "boolean", "enableUpdate", "false"
-            buildConfigField "String", "defaultAppUrl", "\"https://kino.oneevil.tr\""
+            buildConfigField "String", "defaultAppUrl", "\"\""
         }
     }
 

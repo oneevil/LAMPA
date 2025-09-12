@@ -207,8 +207,8 @@ class MainActivity : BaseActivity(),
             "com.google.android.exoplayer2.demo", // v2, Legacy
             "androidx.media3.demo.main", // v3, current
         )
-        private val PLAYERS_BLACKLIST = setOf(
-            "com.android.gallery3d",
+        private val PLAYERS_BLACKLIST = setOfNotNull(
+            "com.android.gallery3d".takeIf { BuildConfig.FLAVOR != "zidoo" },
             "com.android.tv.frameworkpackagestubs",
             "com.estrongs.android.pop",
             "com.estrongs.android.pop.pro",
@@ -224,7 +224,6 @@ class MainActivity : BaseActivity(),
             "nextapp.fx",
             "org.droidtv.contentexplorer",
             "pl.solidexplorer2",
-            // more to add...
         )
         private val URL_PATTERN = Pattern.compile(URL_REGEX)
         private val listenerMutex = Mutex()

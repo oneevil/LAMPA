@@ -48,5 +48,6 @@ jobs:
         files: |
           app/build/outputs/apk/lite/release/app-lite-release.apk
           app/build/outputs/apk/full/release/app-full-release.apk
+          app/build/outputs/apk/zidoo/release/app-zidoo-release.apk
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

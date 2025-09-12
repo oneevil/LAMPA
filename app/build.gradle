@@ -98,6 +98,10 @@ android {
             buildConfigField "boolean", "enableUpdate", "true"
             buildConfigField "String", "defaultAppUrl", "\"https://kino.oneevil.tr\""
         }
+        zidoo {
+            buildConfigField "boolean", "enableUpdate", "true"
+            buildConfigField "String", "defaultAppUrl", "\"https://kino.oneevil.tr\""
+        }
         full {
             buildConfigField "boolean", "enableUpdate", "true"
             buildConfigField "String", "defaultAppUrl", "\"\""
@@ -180,5 +184,6 @@ dependencies {
     implementation 'org.mozilla:rhino:1.7.15' // JavaScript to run PAC file to get correct proxies
     // crosswalk latest
     liteApi fileTree(dir: 'libs', include: ['xwalk_shared_library-23.53.589.4.aar'])
+    zidooApi fileTree(dir: 'libs', include: ['xwalk_shared_library-23.53.589.4.aar'])
     fullApi fileTree(dir: 'libs', include: ['xwalk_shared_library-23.53.589.4.aar'])
 }
